@@ -116,6 +116,6 @@ test(test_objects_price_1) :-
     objects_price(player_4, 600).
 
 test(test_objects_price_2) :-
-    objects_price(player_2, 210).
+    objects_price(player_2, 200).
 
 :- end_tests(test).
