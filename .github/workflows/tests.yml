@@ -13,7 +13,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
+
+      - name: Install SWI-Prolog
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: swi-prolog
+
       # - name: Install SWI-Prolog
       #   run: |
       #     sudo apt-add-repository ppa:swi-prolog/stable
