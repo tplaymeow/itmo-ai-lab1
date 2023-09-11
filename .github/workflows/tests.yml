@@ -18,12 +18,6 @@ jobs:
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
           packages: swi-prolog
-
-      # - name: Install SWI-Prolog
-      #   run: |
-      #     sudo apt-add-repository ppa:swi-prolog/stable
-      #     sudo apt-get update
-      #     sudo apt-get install swi-prolog
           
       - name: Run tests
         run: swipl -g run_tests -t halt monopoly.pl
